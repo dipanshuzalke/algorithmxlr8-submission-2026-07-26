@@ -6,19 +6,9 @@ public class Main {
         String s = sc.nextLine();
         String t = sc.nextLine();
 
-        if(s.length() == 0) {
-            System.out.println("true");
-            return;
-        }
+        int i = 0;
 
-        int i=0;
-
-        for(int j=0; j<t.length(); j++) {
-            if(i == s.length()) {
-                System.out.print("true");
-                return;
-            }
-
+        for(int j = 0; j<t.length() && i<s.length(); j++) {
             if(s.charAt(i) == t.charAt(j)) {
                 i++;
             }
